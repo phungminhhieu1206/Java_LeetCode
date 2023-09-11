@@ -1,5 +1,8 @@
 package com.hieudev.leetcode.array;
 
+/**
+ * 1. Thao tác duyệt mảng
+ */
 public class _1295FindNumbersEvenDigits {
     public int countDigits(int num) {
         if (num == 0) {
