@@ -1,7 +1,7 @@
 package com.hieudev.leetcode.array;
 
 public class _1295FindNumbersEvenDigits {
-    public static int countDigits(int num) {
+    public int countDigits(int num) {
         if (num == 0) {
             return 1;
         }
@@ -14,7 +14,7 @@ public class _1295FindNumbersEvenDigits {
         return count;
     }
 
-    public static int findNumbers(int[] nums) {
+    public int findNumbers(int[] nums) {
         int result = 0;
         for (int i=0; i< nums.length; i++) {
             if (countDigits(nums[i])%2 == 0) {
@@ -26,6 +26,7 @@ public class _1295FindNumbersEvenDigits {
 
     public static void main(String[] args) {
         int[] temp = {12,345,2,6,7896};
-        System.out.println(findNumbers(temp));
+        _1295FindNumbersEvenDigits obj = new _1295FindNumbersEvenDigits();
+        System.out.println(obj.findNumbers(temp));
     }
 }
